@@ -1,4 +1,4 @@
-# 🍕 DLN Pizzas Shop — Website
+# 🍕 DLN Pizzas Shop - Website
 
 Premium pizza restaurant website built with **React + Vite + Tailwind CSS**.
 
@@ -6,24 +6,24 @@ Premium pizza restaurant website built with **React + Vite + Tailwind CSS**.
 
 ## 🚀 Quick Start (VS Code)
 
-### Step 1 — Install dependencies
+### Step 1 - Install dependencies
 ```bash
 npm install
 ```
 
-### Step 2 — Start development server
+### Step 2 - Start development server
 ```bash
 npm run dev
 ```
 
-### Step 3 — Open in browser
+### Step 3 - Open in browser
 ```
 http://localhost:5173
 ```
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 dln-pizzas/
@@ -57,7 +57,7 @@ dln-pizzas/
 
 ---
 
-## ✏️ How to Edit
+##  How to Edit
 
 ### Change WhatsApp number
 Search for `919392779349` across the project and replace with your number:
@@ -79,19 +79,19 @@ Edit `src/components/Footer.jsx` and `src/components/Location.jsx`.
 
 ---
 
-## 🏗️ Build for Production
+##  Build for Production
 ```bash
 npm run build
 ```
-Output will be in `dist/` folder — ready to deploy!
+Output will be in `dist/` folder - ready to deploy!
 
 ---
 
-## 🌐 Deploy Options
+##  Deploy Options
 - **Vercel**: `npm i -g vercel && vercel`
 - **Netlify**: Drag `dist/` folder to netlify.com
 - **Railway**: Connect GitHub repo
 
 ---
 
-Made with ❤️ for DLN Pizzas Shop, Dharmavaram, AP
+Made with  for DLN Pizzas Shop, Dharmavaram, AP
