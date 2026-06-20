@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0D0D0D;
+    color: #F5F5F5;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1A1A1A;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #E8192C;
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+
+  .btn-primary {
+    @apply bg-brand-red text-white font-semibold px-6 py-3 rounded-full
+           transition-all duration-300
+           hover:bg-red-700
+           active:scale-95;
+  }
+
+  .btn-whatsapp {
+    @apply bg-green-500 text-white font-semibold px-6 py-3 rounded-full
+           transition-all duration-300
+           hover:bg-green-600
+           active:scale-95;
+  }
+
+  .card-pizza {
+    @apply bg-[#1A1A1A] border border-[#2A2A2A]
+           rounded-2xl overflow-hidden
+           transition-all duration-300;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-white;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-red via-brand-orange to-brand-yellow
+           bg-clip-text text-transparent;
+  }
+
+  .glow-border {
+    @apply border border-red-500/30;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #1A1A1A 25%,
+    #2A2A2A 50%,
+    #1A1A1A 75%
+  );
+
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.hero-gradient {
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(232, 25, 44, 0.15) 0%,
+      transparent 70%
+    ),
+    linear-gradient(
+      to bottom,
+      #0D0D0D 0%,
+      #1a0505 50%,
+      #0D0D0D 100%
+    );
+}
+
+.fire-gradient {
+  background: linear-gradient(
+    135deg,
+    #E8192C 0%,
+    #FF6B2B 50%,
+    #F5C518 100%
+  );
+}
+
+.nav-blur {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(13, 13, 13, 0.85);
+}
